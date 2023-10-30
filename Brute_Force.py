@@ -11,13 +11,13 @@ target_number = random.randint(20, 50)
 
 while True:
     try:
-        guess = int(input("Masukkan tebakan angka dari 20 sampai 53: "))
+        guess = int(input("Masukkan tebakan angka dari 20 sampai 50: "))
     except ValueError:
         print("Angka tidak valid.")
         continue
 
     if guess < 20 or guess > 50:
-        print("Angka harus dari 20 sampai 53.")
+        print("Angka harus dari 20 sampai 50.")
         continue
 
     if guess < target_number:
